@@ -1,0 +1,21 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block title%}
+    <title>Main_page</title>
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+                                                    // => static/css/styles.css when "load static"
+{% endblock %}
+
+{% block content %}
+    <h1 class="test">Main Page!</h1>
+    <h2>Hello, {{ username|title }}</h2>
+    {% if username == ' ' %}
+        <div>You're anonymous</div>
+    {% else %}
+        <div>You're {{ username|title }}</div>
+    {% endif %}
+{% endblock %}
