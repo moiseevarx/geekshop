@@ -1,0 +1,16 @@
+[
+  {
+    "href": "main",
+    "name": "Main page"
+  },
+
+  {
+    "href": "products",
+    "name": "Products"
+  },
+
+  {
+    "href": "contacts",
+    "name": "Contacts"
+  }
+]

@@ -5,5 +5,10 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Products!</h1>
+    <h1>Products all</h1>
+    <ul>
+        {%  for x in products %}
+            <li>{{ x.name }}</li>
+        {% endfor %}
+    </ul>
 {% endblock %}

@@ -7,7 +7,7 @@
 
 {% block css %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
-                                                    // => static/css/styles.css when "load static"
+<!--                                                     => static/css/styles.css when "load static"-->
 {% endblock %}
 
 {% block content %}
@@ -18,4 +18,9 @@
     {% else %}
         <div>You're {{ username|title }}</div>
     {% endif %}
+    <ul>
+    {%  for item in array %}
+        <li>element {{ item }}</li>
+    {% endfor %}
+    </ul>
 {% endblock %}
