@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Toys",
+    "name": "Winnie-the-Pooh",
+    "price": 15,
+    "quantity": 5
+  },
+  {
+    "category": "Toys",
+    "name": "Bear",
+    "price": 24,
+    "quantity": 11
+  },
+  {
+    "category": "Cars",
+    "name": "RadioCars",
+    "price": 32,
+    "quantity": 7
+  },
+  {
+    "category": "Cars",
+    "name": "Formula1",
+    "price": 11,
+    "quantity": 4
+  }
+]

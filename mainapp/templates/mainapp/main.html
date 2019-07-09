@@ -12,11 +12,10 @@
 
 {% block content %}
     <h1 class="test">Main Page!</h1>
-    <h2>Hello, {{ username|title }}</h2>
-    {% if username == ' ' %}
-        <div>You're anonymous</div>
+    {% if request.user.is_authenticated %}
+        <h2>Hello, {{ request.user.username|title }}</h2>
     {% else %}
-        <div>You're {{ username|title }}</div>
+        <h2>Hello!</h2>
     {% endif %}
     <ul>
     {%  for item in array %}
